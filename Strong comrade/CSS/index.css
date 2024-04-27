@@ -1,0 +1,1310 @@
+body{
+  overflow: scroll;  
+  padding: 0%;
+  margin: 0%;
+  background: #ffffff;
+  background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #F2F2F2 50%, #F2F2F2 50%, #F2F2F2 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#F2F2F2), color-stop(50%,#F2F2F2), color-stop(100%,#F2F2F2));
+  background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: -o-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: -ms-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: linear-gradient(135deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+
+
+} 
+
+li{
+ position: relative;
+
+}
+li::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height:4px;
+  width: 100%;
+  left:0;
+  background-color: #146C94;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+h1{
+  display:block;
+  position: relative ;
+  width: max-content;
+  cursor: pointer;
+}
+h1::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height:4px;
+  width: 100%;
+  left:0;
+  background-color: #146C94;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+h1:hover::after{
+  transform: scaleX(1);
+}
+li:hover::after{
+  transform: scaleX(1);
+}
+
+span{
+  color:#19A7CE;
+}
+
+
+.logo{
+  position: absolute;
+  margin-top: 10PX;
+  margin-left:20px ;
+}
+.logot{
+  color:black;
+position: absolute; 
+  font-size: 20px;
+  font-family:serif;
+  font-weight: bold;
+  margin-top: 85px;
+  margin-left: 100px;
+ 
+}
+
+
+a{
+  text-decoration: none;
+  color: #000;
+  
+}
+
+ul.main{
+  
+  margin-left: 400px;
+  display: flex;
+  margin-bottom: 1%;
+}
+.limain{
+  color: black;
+  display: inline-block;
+  font-size: 17px;
+  font-family:serif;
+  font-weight: bold;
+  margin-top: 130px ;
+  margin-left:50px;
+}
+
+
+/*login page*/
+#id01{
+  width: 100%;
+}
+
+/* Full-width input fields */
+input[class=inner], input[type=password] {
+width: 80%;
+border-radius: 30px;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 2px solid #146C94;
+box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.sub{
+background-color:#19A7CE;
+color: black;
+padding: 5px 16px;
+margin: 8px 0;
+font-size: 20px;
+font-weight: bold;
+border: 1px solid transparent;
+border-radius: 30px;
+cursor: pointer;
+width: 50%;
+transition:transform .4s;
+margin-left: 30%;
+
+}
+.submain{
+  background-color:#146C94 ;
+  color: white;
+  padding: 5px 16px;
+  margin-left:91% ;
+  margin-top: 14%;
+  border-radius: 15px;
+  border: 1px rgb(20, 108, 148) solid;
+  position: absolute;
+  transition:transform .4s;
+  z-index: 5;
+  font-size: 20px;
+  font-weight: bold;
+}
+.subca{
+  background-color:#19A7CE ;
+color: black;
+padding: 5px 16px;
+margin: 8px 0;
+font-size: 20px;
+font-weight: bold;
+border: 1px solid transparent;
+border-radius: 30px;
+cursor: pointer;
+width: 20%;
+transition:transform .4s;
+margin-left: 2%;
+}
+
+button:hover {
+  transform:scale(1.2) ;
+  background-color: white;
+  color: #000;
+  border: #146C94 2px solid;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+width: auto;
+padding: 5px 16px;
+background-color: 146C94;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+position: relative;
+}
+
+img.avatar {
+width: 40%;
+
+}
+
+.container {
+padding: 16px;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid transparent;
+width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: red;
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+   display: block;
+   float: none;
+}
+.cancelbtn {
+   width: 100%;
+}
+}
+
+
+
+.round {
+  margin-left:65% ;
+  margin-top: 60px;
+  width: 23%;
+  border-radius: 15px;
+  border: 1px  solid #19A7CE;
+  padding: 5px 5px 5px 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  font-size: 20px;
+}
+.search {
+  position: fixed;
+  width: 190px;
+  height: 30px;
+}
+.btn{
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 89%;
+  font-size: 20px;
+  background-color:#19A7CE ;
+  color: black;
+  text-decoration: none;
+  border: solid 2px transparent;
+  font-weight: bold;
+  padding: 5px 16px;
+  border-radius: 30px;
+  transition:transform .4s;
+}
+.btn:hover{
+  transform:scale(1.2) ;
+  background-color: white;
+  color: #000;
+  border: #146C94 2px solid;
+}
+.car{
+  margin-top: 5%;
+  margin-left: 50%;
+  display: inline-block;
+  position: absolute;
+}
+.about{
+  display:block;
+  position: absolute;
+  font-size:50px ;
+  margin-top: 11%;
+  margin-left: 9%;
+  width: max-content;
+  cursor: pointer;
+}
+.about::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height:4px;
+  width: 100%;
+  left:0;
+  background-color: #146C94;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+.about:hover::after{
+  transform: scaleX(1);
+
+}
+
+
+.com{
+  width: max-content;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  font-size:50px ;
+  margin-top: 16%;
+  margin-left: 11%;
+  width: max-content;
+  cursor: pointer;
+}
+.com::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height:4px;
+  width: 100%;
+  left:0;
+  background-color: #146C94;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+  .com:hover::after{
+    transform: scaleX(1);
+
+  }
+.pra{
+position: absolute;
+  line-height: 30px;
+  margin-top: 270px;
+  margin-left: 5%;
+  width: 45%;
+  display: block;
+  font-size: 20px;
+  font-family:serif;
+  text-align: center;
+
+}
+.next{
+background-color: white;
+
+  width: 100%;
+  height: 100%;
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family:serif ;}
+/* Phone*/
+
+
+
+
+
+section {
+height: 100vh;
+width: 100%;
+display: grid;
+place-items: center;
+}
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+.column {
+width: 100%;
+padding: 0 1em 1em 1em;
+text-align: center;
+}
+.card {
+width: 100%;
+height: 100%;
+padding: 2em 1.5em;
+background: linear-gradient(rgb(246, 241, 241) 50% , #146C94   50%);
+background-size: 100% 200%;
+background-position: 0 2.5%;
+border-radius: 5px;
+box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+transition: 0.5s;
+
+}
+.section{
+width: 100% ;
+display: inline-block;
+display: flex;
+flex-wrap: wrap; 
+
+
+
+}
+.s-heading{
+font-size: 50px;
+display: flex;
+flex-wrap: wrap;
+margin-left: 35%; 
+
+
+}
+h3 {
+font-size: 20px;
+font-weight: 600;
+color: #1f194c;
+margin: 1em 0;
+}
+p {
+color: #575a7b;
+font-size: 15px;
+line-height: 1.6;
+letter-spacing: 0.03em;
+}
+.icon-wrapper {
+background-color: #146C94;
+position: relative;
+margin: auto;
+font-size: 30px;
+height: 2.5em;
+width: 2.5em;
+color: #ffffff;
+border-radius: 50%;
+display: grid;
+place-items: center;
+transition: 0.5s;
+}
+.card:hover {
+background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+background-color: #ffffff;
+color: #146C94;
+}
+.card:hover h3 {
+color: #ffffff;
+}
+.card:hover p {
+color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+section {
+  padding: 0 2em;
+}
+.column {
+  flex: 0 50%;
+  max-width: 50%;
+}
+}
+@media screen and (min-width: 992px) {
+section {
+  padding: 1em 3em;
+}
+.column {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+}
+.tcs{
+  width: 100%;
+  height: 500px;
+ 
+}
+.tas{
+  margin-top: 10%;
+  font-size: 30px;
+  margin-left: 40%;
+}
+.tasp{
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+
+.Sontainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+.wlt{
+  font-size:40px;
+  margin-left: 20%;
+
+ 
+  margin-bottom: 50px;
+}
+.customer{
+  margin-left: 38%; 
+  position: absolute;
+  border: #146c94 2px solid;
+  border-radius: 30px;
+  
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  z-index: 2; 
+  position: relative;
+}
+
+.n2dl{
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 22PX;
+}
+
+.input, #question{
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 35%;
+  border-bottom: #146c94 2px solid ;
+
+}
+
+#question {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.input[type="submit"] {
+  background-color: #19A7CE;
+  color: black;
+  cursor: pointer;
+  font-size: 25px;
+  width: 10%;
+  border: #19A7CE 2px solid;
+  border-radius: 30px;
+  font-weight:bold ;
+ 
+}
+
+.input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+}
+.About-us {
+text-align: center;
+margin-top: 30px;
+margin-bottom: 30px;
+width: 100%;
+height: 200px;
+}
+
+
+
+.pa {
+line-height: 35px;
+margin-left: 2%;
+margin-top: 4%;
+display: block;
+
+}
+
+.ilo {
+display: inline-block;
+justify-content: center;
+margin-left: 80px;
+text-align: center;
+margin-top: 5%;
+}
+
+.im {
+border: 2px solid #146C94;
+border-radius: 50%;
+}
+
+#ia {
+display: inline-block;
+text-align: center;
+}
+
+.follow {
+width: 100%;
+text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+/* Styles for tablets */
+.About-us {
+  width: 50%;
+  float: left;
+}
+
+.follow {
+  width: 50%;
+  height: 50%;
+}
+}
+
+@media only screen and (max-width: px) {
+/* Styles for mobile */
+.About-us {
+  width: 100%;
+  float: none;
+}
+
+.ilo {
+  margin-left: 0;
+}
+
+.follow {
+  width: 100%;
+  height: auto;
+}
+}
+*{
+box-sizing: border-box;
+
+}
+
+
+
+/* The grid: Four equal columns that floats next to each other */
+.rolumn {
+float: left;
+width: 20%;
+padding: 10px;
+}
+
+/* Style the images inside the grid */
+.rolumn img {
+opacity: 0.8; 
+cursor: pointer;
+ border: #146C94 solid 2px;
+}
+
+.rolumn img:hover {
+opacity: 1;
+}
+
+/* Clear floats after the columns */
+.cow:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* The expanding image container */
+.rontainer {
+position: relative;
+display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+position: absolute;
+bottom: 15px;
+left: 15px;
+color:white;
+font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+position: absolute;
+top: 10px;
+right: 50px;
+color: black;
+font-size: 35px;
+cursor: pointer;
+}
+.career{
+background-image: url(img/next.jpg);
+background-size: cover;
+}
+span{
+color: #19A7CE;
+}
+.tta{
+font-size: 70px;
+margin-left: 3%;
+font-family: serif;
+margin-bottom: 2%;
+display: block;
+position: absolute;
+
+
+}
+.cp{
+margin-top: 15%;
+width: 30%; 
+margin-left: 5%;
+float: left;
+display: block;
+font-size: 20px;
+
+}
+.care{
+margin-left:100px;
+margin-top: 3%;
+border: 2px solid black;
+border-radius: 50px;
+}
+.curt{
+width: 100%;
+display: inline-block;
+}
+.sc{
+
+display: block;
+margin-bottom: 25%;
+
+
+}
+
+
+
+
+.l4{
+margin-top: 40px;
+margin-left: 20%;
+
+}
+.hover-div {
+background-color: white;
+width: 120px;
+height: 100px;
+border: 2px solid #19A7CE;
+border-radius: 50%;
+padding: 40px;
+display: inline;
+margin-left: 8%;
+font-size: 70px;
+position: relative;
+font-weight: bold;
+color: #19A7CE;
+}
+.l3{
+margin-top: 9%;
+padding-left: 30%;
+
+}
+
+.full-form {
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: none;
+background-color: #19A7CE;
+color: white;
+padding: 15px;
+border-radius: 5px;
+text-align: center;
+border-radius: 50%;
+}
+
+.hover-div:hover .full-form {
+display: block;
+font-size: 23px;
+
+}
+.hover-div:hover{
+background-color: #19A7CE;
+box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+
+}
+.job{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 500px;
+  height: 500px;
+  border: 2px solid #146c94;
+  border-radius: 30px;
+
+
+}
+.job:hover{
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+ 
+}
+.j1st{
+  font-size: 30px;
+  margin-left: 3%;
+  padding: 5%;
+
+}
+.j2nd{
+  color: #146c94;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+.j3rd{
+  color: #146c94;
+  display: inline;
+  margin-left: 2%;
+  font-size: 20px;
+  
+}
+.j4th{
+  color: #146c94;
+  font-size: 20px;
+  margin-bottom: 5%;
+  margin-left: 2%;
+}
+
+.jobl{margin-top: 3%;
+  margin-bottom: 4%;
+  margin-left: 5%;
+  font-size: 20px;
+}
+.jobb{
+  background-color: #19A7CE;
+  border: #19A7CE 2px solid;
+ border-radius: 20px;
+  width: 40%;
+  font-size: 18px;
+  height: 40px;
+  margin-left: 5%;
+  transition:transform .4s;
+  cursor: pointer;
+  
+}
+.jobb:hover{
+  background-color: white;
+  color: black;
+  transform:scale(1.2) ;
+}
+ /* Styles for the WhatsApp Icon */
+ .whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Adjust the value to change the vertical position */
+  right: 20px; /* Adjust the value to change the horizontal position */
+  z-index: 9999; /* Make sure it appears on top of other elements */
+  display: inline-block;
+  border-radius: 50%; /* If your icon is circular */
+  background-color: #25d366; /* Customize the background color if needed */
+  padding: 10px;
+}
+
+/* Optional: Add hover effect to the WhatsApp icon */
+.whatsapp-icon:hover {
+  background-color: #128c7e; /* Customize the hover background color */
+}
+
+/* Optional: Add a box-shadow to the icon for a 3D effect */
+.whatsapp-icon {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#cic{
+  font-size:30px ;
+  display: inline-block;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+.chntainer {
+    
+    border-radius: 20px;
+    position: relative;
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+    transform-style: preserve-3d;
+    width: 70%;
+    height: 500px;
+    margin-left: 20%;
+    margin-top: 0%;
+    margin-bottom:7% ;
+}
+
+.side {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px;
+    color:white        ;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+.conh1{
+  font-size: 60px;
+  margin-bottom: 7%;
+
+ 
+}
+.content {
+    transform: translatez(70px) scale(0.8);
+    line-height: 4em;
+    text-align: center;
+}
+ .ch1 {
+    position: relative;
+    font-size: 60px;
+    margin-left: 27%;
+    margin-bottom: 5%;
+
+}
+
+.content .cpp {
+    margin-top: 50px;
+    line-height: 1.5em;
+    font-size: 24px;
+    color: white;
+
+}
+.content .ch1:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    height: 3px;
+    background-color: #146C94;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.front {
+    z-index: 2;
+    background-size: 100vh;
+    background-size: cover;
+    border: #146C94 2px solid;
+    border-radius: 30px;
+    background-image: url(img/ansda.png);
+   
+    
+}
+.back {
+    background-color: #333;
+    transform: rotateY(180deg);
+    z-index: 0;
+    padding-top: 10px;
+    background-image: url(https://img.freepik.com/premium-photo/front-view-dark-silhouette-modern-sport-black-car-isolated-black-background_698214-2941.jpg);
+    background-size: cover ;
+    border: #146C94 2px solid;
+    border-radius: 30px;
+    
+}
+.chntainer:hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+form {
+    text-align: left;
+    
+    
+}
+
+.back .ch1 {
+    margin: 0;
+}
+.conim{
+  position: absolute;
+  left: 40%;
+  margin-top:30px; 
+   border: #146C94 2px solid;
+ border-radius: 30px;
+}
+.conim:hover{
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+form .labelc,
+form #subcc1 {
+    display: block;
+    
+}
+form #subcc1,
+form textarea {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    
+}
+form .labelc {
+    margin: 15px 0;
+  
+}
+
+/* my button style  */
+.white-mode {
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: white;
+    border-radius: 3px;
+    color:white;
+    transition: 0.35s ease-in-out;
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    font-family: "Montserrat";
+
+}
+
+.white-mode:hover {
+    background-color: #fff;
+    color: white;
+}
+.google-map {
+  margin-bottom: 10px;
+  padding-bottom: 50%;
+  position: relative;
+  margin-left: 40%;
+
+}
+
+.google-map iframe {
+  height: 70%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.allco{
+   body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  background-color: white;
+  background-size: contain;
+  font-family: "Montserrat";
+}
+}
+.cp1{
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+  margin-left: 30%;
+  margin-bottom: 2%;
+}
+
+/*Ignore me, I'm just page styling*/
+footer{
+  background-image:url(footer-background-image-garber-body-shop-fort-pierce-fl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.foh1{
+  font-size: 40px;
+  margin-left: 3%;
+  margin-top: 5%;
+  position: absolute;
+color: white;
+}
+.fdiv{
+  margin-left: 11%;
+  display: inline-block;
+  
+}
+
+
+
+.fll{
+  list-style-type: none;
+  margin-top: 30%;
+  font-weight:bold ;
+  color: white;
+}
+
+.femail{
+  padding: 3%;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 30px;
+  border:2PX solid #146C94 ;
+}
+.submitf{
+  background-color: #19A7CE;
+  font-size: 20px;
+  margin-left: 35%;
+  margin-top: 3%;
+  border-radius: 30px;
+  border:2PX solid #146C94 ;
+  padding: 3%;
+  width: 30%;
+  transition:transform .4s;
+}
+.submitf:hover{
+  transform:scale(1.2) ;
+  background-color: white;
+ color: #000;
+border: #146C94 2px solid;
+}
+
+/* Copyright */
+.copy-right {
+text-align: center;
+margin-top: 40px;
+font-size: 18px;
+color: white;
+padding-bottom: 20px;
+}
+
+
+.sf{
+  margin-top: 100PX;
+  font-size:1.5em;
+  margin-bottom:20px;
+  margin-left: 40%;
+  color: white;
+
+}
+
+#social-platforms {
+  left: 300px;
+  font-size:1rem;
+  text-align:center;
+  height:250px;
+  overflow:hidden;
+  top: 5%;
+}
+
+/*Pen code from this point on*/
+.btn1 {
+  clear:both;
+  white-space:nowrap;
+  font-size:.8em;
+  display:inline-block;
+  border-radius:5px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+  margin:2px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  overflow:hidden
+}
+
+.btn1:hover {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn1:focus {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn1 > span,.btn-icon > i {
+  float:left;
+  padding:13px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  line-height:1em
+}
+
+.btn1 > span {
+  padding:14px 18px 16px ;
+  white-space:nowrap;
+  color:#FFF;
+  background:#b8b8b8
+}
+
+.btn1:focus > span {
+  background:#9a9a9a
+}
+
+.btn-icon > i {
+  border-radius:5px 0 0 5px;
+  position:relative;
+  width:13px;
+  text-align:center;
+  font-size:1.25em;
+  color:#fff;
+  background:#212121
+}
+
+.btn-icon > i:after {
+  content:"";
+  border:8px solid;
+  border-color:transparent transparent transparent #222;
+  position:absolute;
+  top:13px;
+  right:-15px
+}
+
+.btn-icon:hover > i,.btn-icon:focus > i {
+  color:#FFF
+}
+
+.btn-icon > span {
+  border-radius:0 5px 5px 0
+}
+
+/*Facebook*/
+.btn-facebook:hover > i,.btn-facebook:focus > i {
+  color:#3b5998
+}
+
+.btn-facebook > span {
+  background:#3b5998
+}
+
+/*Twitter*/
+.btn-twitter:hover > i,.btn-twitter:focus > i {
+  color:#55acee
+}
+
+.btn-twitter > span {
+  background:#55acee
+}
+
+/*Google*/
+.btn-googleplus:hover > i,.btn-googleplus:focus > i {
+  color:#dd4b39
+}
+
+.btn-googleplus > span {
+  background:#dd4b39
+}
+
+/*Pinterest*/
+.btn-pinterest:hover > i,.btn-pinterest:focus > i {
+  color:#cb2028
+}
+
+.btn-pinterest > span {
+  background:#cb2028
+}
+
+/*LinkedIn*/
+.btn-linkedin:hover > i,.btn-linkedin:focus > i {
+  color:#007bb6
+}
+
+.btn-linkedin > span {
+  background:#007bb6
+}
+#i24:hover{
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+.lolo{
+  background-color: white;
+}
+.im{
+  transition:transform .4s;
+  
+}
+.im:hover{
+  transform:scale(1.2) ;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+#ico{
+  transition:transform .4s;
+}
+#ico:hover{
+  transform:scale(1.2) ;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}

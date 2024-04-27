@@ -1,0 +1,83 @@
+/*-------------------- CSS --------------------*/
+/* style.css */
+
+.all-scroll{
+    width: 100%;
+    background-color: white;
+    margin-top: 2%;
+    }
+.product-detail{
+    font-size: 30px;
+    color: black;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.chntainer{
+    display: flex;
+    background-color: white;
+    padding: 30px 10px;
+    position: relative;
+    height: 400px;
+}
+
+
+.products{
+    display: flex;
+    height: 200px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.products img{
+    padding-bottom: 10px;
+    margin: 0 10px ;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+.arrow{
+position: absolute;
+background-color: rgba(255, 255, 255, 0.461);
+height:100px;
+width: 50px;
+display: none;
+align-items: center;
+justify-content: center;
+margin-top: 40px;
+
+}
+
+.chntainer:hover .arrow{
+    display: flex;
+}
+
+.arrow:hover{
+    border: 1px solid black;
+}
+
+.prev{
+    left: 0;
+
+}
+.next{
+    right: 0;
+}
+
+.arrow img{
+    width: 40px;
+}
+
+.products::-webkit-scrollbar{
+    height: 7px;
+   
+}
+.products::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 8px;
+ 
+}
+.chntainer:hover .products::-webkit-scrollbar-thumb{
+    background-color: rgb(179, 179, 179);
+}

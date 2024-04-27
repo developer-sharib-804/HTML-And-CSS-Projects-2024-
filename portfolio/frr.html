@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ 
+   $("button").click(function(){
+
+    $("#box").toggle();
+    if(document.getElementById("box").style.display == "none" ){
+      
+         document.getElementById("con").innerHTML =  "paragraph is hide now";
+         document.getElementById("con").style.backgroundColor = "red";
+     
+    }
+    else{
+      document.getElementById("con").innerHTML =  "";
+    
+      document.getElementById("con").style.display == "none" ;
+    }
+       
+
+    });
+    
+
+   });
+   
+  // $(".btn2").dblclick(function(){
+  //   $("p").show("slow", function(){
+  //     alert("The paragraph is now Show");
+  //   });
+  // });
+
+</script>
+</head>
+<body>
+
+<button >click</button>
+
+<p id="box">This is a paragraph with little content.</p>
+<p id="con"></p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    
+    <link rel="icon" type="image" href="img/car.png" >
+    <title>StrongComrade.com</title>
+  
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
+<body>
+  <Script>// Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }</Script>
+    
+<div style="position: relative; width:100%; height: 900px;">
+    <header style="position: relative; width:100%; height: 200px;">
+      <div class="nav">
+        <!----login page---->
+  <button class="submain" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+  
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="#" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img/aag.PNG" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input class="inner" type="text" placeholder="Enter Username" name="uname" required> <br><br>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button class="sub" type="submit">Login</button>
+        <label><br>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button class="subca" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  
+  
+          <a class="btn" href="#">Search</a>
+          <a href="file:///C:/Users/HAFIZ/OneDrive/Desktop/start/start.html"><img class="logo" src="img/carpa.png" width="160" height="80"  alt=""></a>
+         <a href="file:///C:/Users/HAFIZ/OneDrive/Desktop/start/start.html"><h2 class="logot">STR<span>ONG</span><br>COMR<span>ADE</span></h2></a>
+          
+          <ul class="main">
+              <li class="limain"><a href="index.html.php">HOME</a></li>
+              <li class="limain"><a href="about.html.php">ABOUT US</a></li>
+              <li class="limain"><a href="service.html.php">OUR SERVICE</a></li>
+              <li class="limain"><a href="career.html.php">CAREER</a></li>
+              <li class="limain"><a href="contact.html.php">CONTACT US</a></li>
+  
+          </ul>
+     
+       
+          <div class="ser">
+              
+          <input type="text" name="search" class="round" placeholder="search About Vechile">
+      </div>
+  </div>
+
+  </header>
